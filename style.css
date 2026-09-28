@@ -1,0 +1,329 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8f8f8;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+
+header{
+    background:#000;
+    color:#FFD700;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    position:sticky;
+    top:0;
+}
+
+.logo h1{
+    font-size:28px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    color:#FFD700;
+}
+
+/* Hero Section */
+
+.hero{
+    height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url('../images/hero.jpg') center/cover;
+    color:white;
+}
+
+.hero-text{
+    max-width:700px;
+}
+
+.hero h2{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#FFD700;
+    color:#000;
+    padding:15px 35px;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:white;
+    transform:scale(1.05);
+}
+
+/* Services */
+
+.services{
+    padding:70px 8%;
+    text-align:center;
+}
+
+.services h2{
+    font-size:38px;
+    margin-bottom:40px;
+}
+
+.service-box{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:300px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#d4a017;
+    margin-bottom:15px;
+}
+
+/* Why Us */
+
+.why-us{
+    background:#000;
+    color:white;
+    padding:70px 8%;
+}
+
+.why-us h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.why-us ul{
+    max-width:700px;
+    margin:auto;
+    list-style:none;
+}
+
+.why-us li{
+    padding:12px;
+    font-size:20px;
+}
+
+/* Footer */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    text-align:center;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+.hero h2{
+    font-size:35px;
+}
+
+.hero p{
+    font-size:17px;
+}
+
+}
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+.card h4{
+    color:#d4a017;
+    margin-top:15px;
+    font-size:22px;
+}
+
+.card{
+    overflow:hidden;
+}
+
+.card:hover img{
+    transform:scale(1.05);
+    transition:.5s;
+}
+/* Order Form */
+
+.order-form{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea{
+
+padding:15px;
+
+font-size:17px;
+
+border:1px solid #ccc;
+
+border-radius:10px;
+
+outline:none;
+
+}
+
+.order-form input:focus,
+.order-form select:focus,
+.order-form textarea:focus{
+
+border:2px solid gold;
+
+}
+
+.order-form button{
+
+border:none;
+
+cursor:pointer;
+
+font-size:18px;
+
+}
+/* Contact Page */
+
+.contact-box{
+
+display:flex;
+
+justify-content:space-between;
+
+gap:40px;
+
+flex-wrap:wrap;
+
+margin-top:40px;
+
+}
+
+.contact-info{
+
+flex:1;
+
+min-width:300px;
+
+}
+
+.contact-info h3{
+
+margin-bottom:20px;
+
+color:#d4a017;
+
+}
+
+.contact-info p{
+
+margin-bottom:15px;
+
+font-size:18px;
+
+}
+
+.contact-form{
+
+flex:1;
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+min-width:300px;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+padding:15px;
+
+border:1px solid #ccc;
+
+border-radius:10px;
+
+font-size:16px;
+
+}
+
+.contact-form button{
+
+border:none;
+
+cursor:pointer;
+
+}

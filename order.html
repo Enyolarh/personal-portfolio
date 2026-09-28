@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now | Enike's Bakes nd More</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<h1>Enike's Bakes nd More</h1>
+</div>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="order.html" class="active">Order</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+
+<section class="services">
+
+<h2>Place Your Order</h2>
+
+<form onsubmit="placeOrder(); return false;" class="order-form">
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="tel" placeholder="Phone Number" required>
+
+<input type="email" placeholder="Email Address">
+
+<select required>
+<option value="">Select Product</option>
+<option>Birthday Cake</option>
+<option>Wedding Cake</option>
+<option>Cupcakes</option>
+<option>Doughnuts</option>
+<option>Meat Pie</option>
+<option>Small Chops</option>
+<option>Carrot Cake</option>
+<option>Milk Cake</option>
+<option>Plain Cake</option>
+<option>Cookies</option>
+</select>
+
+<input type="number" placeholder="Quantity" min="1" required>
+
+<textarea placeholder="Delivery Address" rows="5" required></textarea>
+
+<button class="btn" type="submit">
+Place Order
+</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>© 2026 Enike's Bakes nd More</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
